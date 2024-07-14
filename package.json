@@ -1,8 +1,8 @@
 {
-  "name": "ui_layout",
+  "name": "infinite_scroll",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pgm-githumbi.github.io/ui_layout",
+  "homepage": "https://pgm-githumbi.github.io/infinite_scroll",
   "dependencies": {
     "@heroicons/react": "^2.1.4",
     "@material-tailwind/react": "^2.1.9",
