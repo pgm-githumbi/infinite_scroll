@@ -1,0 +1,923 @@
+/*! CSS Used from: https://app.resumebuilder.com/assets/css/style_for_print.css ; media=print */
+@media print {
+  @media print {
+    .no-print-border {
+      border-width: 0px !important;
+      border-color: transparent !important;
+      max-height: none !important;
+    }
+    .scaling-area {
+      transform-origin: 0 0 !important;
+      zoom: 1.24 !important;
+    }
+    .header-part {
+      padding-top: 0;
+    }
+  }
+}
+/*! CSS Used from: Embedded */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+div,
+span,
+h2,
+h3,
+p,
+a,
+abbr,
+em,
+i {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+/*! CSS Used from: Embedded */
+.app-editor.app-traditional .scaling-area {
+  transform: scale(1, 1);
+  transform-origin: center top;
+  margin: 0 auto;
+}
+.app-editor.app-traditional .right__fullscreen #resume-download .scaling-area {
+  transform: scale(1);
+  transform-origin: 0 0;
+}
+.app-editor.app-traditional
+  .app-right-panel
+  .page-area
+  .resume-preview
+  #rightEditor
+  #resume-download {
+  max-height: 815px;
+  min-height: 815px;
+  height: 100%;
+}
+.app-editor.app-traditional .app-right-panel .page-area .resume-preview a {
+  pointer-events: none;
+  cursor: default;
+}
+.app-right-panel .page-area .resume-preview a {
+  pointer-events: none;
+  cursor: default;
+}
+.app-right-panel .page-area #resume-download {
+  max-height: 630px;
+  overflow: hidden;
+  box-shadow: 0px 0px 7.41692px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  min-height: 64vh;
+}
+.app-right-panel .page-area #resume-download::-webkit-scrollbar {
+  width: 0px;
+  border-left: solid 1px #b0bbd1;
+  background: #fff;
+}
+.app-right-panel .page-area #resume-download::-webkit-scrollbar-thumb {
+  background-color: #0091ff;
+}
+@media screen and (max-width: 769px) {
+  .app-right-panel .page-area #resume-download {
+    display: none;
+  }
+}
+.right__fullscreen #resume-download {
+  height: 85vh !important;
+  position: absolute;
+  width: 1085px;
+  left: 50%;
+  background: #fff;
+  transform: translateX(-50%);
+  margin-top: 7vh;
+  max-height: inherit !important;
+  min-height: auto !important;
+  padding-top: 30px;
+}
+@media (min-width: 2401px) {
+  .right__fullscreen #resume-download .scaling-area {
+    transform: scale(1.6) !important;
+    transform-origin: center top !important;
+  }
+}
+@media (max-width: 2400px) {
+  .right__fullscreen #resume-download .scaling-area {
+    transform: scale(1.6) !important;
+    transform-origin: center top !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 1250px) {
+  .right__fullscreen #resume-download .scaling-area {
+    transform: scale(1.23) !important;
+    transform-origin: center top !important;
+  }
+}
+@media (max-width: 980px) {
+  .right__fullscreen #resume-download .scaling-area {
+    transform: scale(1.07) !important;
+    transform-origin: center top !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  .right__fullscreen #resume-download .scaling-area {
+    transform-origin: 0 0 !important;
+  }
+}
+@media (max-width: 1250px) {
+  .right__fullscreen #resume-download {
+    width: 840px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .right__fullscreen #resume-download {
+    width: 740px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .right__fullscreen #resume-download {
+    display: block !important;
+    overflow-y: auto !important;
+    -webkit-text-size-adjust: 100%;
+    left: 50%;
+    height: 90vh !important;
+    transform: translate(-50%, 0) !important;
+    top: 0;
+    max-width: 400px;
+    padding-top: 0;
+  }
+  .right__fullscreen #resume-download .scaling-area {
+    transform: scale(0.63) !important;
+  }
+}
+@media all and (max-width: 400px) {
+  .right__fullscreen #resume-download {
+    -webkit-text-size-adjust: 100%;
+    top: 0;
+    height: 100%;
+    max-width: 350px;
+  }
+  .right__fullscreen #resume-download .scaling-area {
+    transform: scale(0.55) !important;
+  }
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.t13 {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 11px;
+  width: 641px;
+}
+.t13 i {
+  font-style: italic;
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.t13 em {
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.t13 a {
+  color: inherit;
+}
+.t13 .header-part {
+  display: block;
+  padding: 47px 0 0 25px;
+  margin-bottom: 20px;
+}
+.t13 .header-part .header-part-inner {
+  display: block;
+  padding: 15px 80px 14px 47px;
+  background-color: #e9932f;
+  border-radius: 60px 0 0 60px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.t13 .header-part .name-with-profession {
+  display: block;
+  width: 40%;
+}
+.t13 .header-part .name-with-profession .resume-name {
+  font-size: 24px;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.t13 .header-part .name-with-profession .resume-profession {
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+.t13 .header-part .header-detail-block {
+  color: #fff;
+  text-align: right;
+  width: 60%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.t13 .header-part .header-detail-block .column {
+  color: #fff;
+  padding: 0 4px 0 0;
+  margin-bottom: 3px;
+}
+.t13 .header-part .header-detail-block .column.address-col {
+  display: block;
+  width: 100%;
+}
+.t13 .header-part .header-detail-block .column .add-line-break {
+  word-break: break-all;
+  hyphens: auto;
+}
+.t13 .about-me {
+  padding: 0px 72px 32px 72px;
+}
+.t13 .about-me p {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.t13 .about-me p:last-child {
+  margin-bottom: 0;
+}
+.t13 .edu-block {
+  padding: 0 72px 24px 72px;
+}
+.t13 .edu-block h2 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #e9932f;
+  margin-bottom: 12px;
+  position: relative;
+}
+.t13 .edu-block h2 span {
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 25px;
+  position: relative;
+  z-index: 1;
+}
+.t13 .edu-block h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #e9932f;
+  border-radius: 15px 0px 0px 15px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+.t13 .edu-block .add-bot-mgn {
+  margin-bottom: 8px;
+}
+.t13 .edu-block .add-bot-mgn h3 {
+  margin-bottom: 5px;
+}
+.t13 .edu-block .add-bot-mgn h3 span {
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 3px;
+  display: inline-block;
+  width: 100%;
+}
+.t13 .edu-block .add-bot-mgn h3 span.college-name {
+  display: block;
+}
+.t13 .edu-block .add-bot-mgn h3 span.degree {
+  margin-bottom: 3px;
+}
+.t13 .edu-block .add-bot-mgn h3 i {
+  display: inline;
+  font-size: 11px;
+  line-height: 11px;
+  font-style: normal;
+}
+.t13 .edu-block .add-bot-mgn:last-child {
+  margin-bottom: 0;
+}
+.t13 .edu-block .add-des-bottom-mgn p {
+  margin-bottom: 6px;
+}
+.t13 .edu-block .add-des-bottom-mgn p:last-child {
+  margin-bottom: 0;
+}
+.t13 .prof-experience {
+  padding: 0 72px 20px 72px;
+}
+.t13 .prof-experience h2 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #e9932f;
+  margin-bottom: 12px;
+  position: relative;
+}
+.t13 .prof-experience h2 span {
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 25px;
+  position: relative;
+  z-index: 1;
+}
+.t13 .prof-experience h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #e9932f;
+  border-radius: 15px 0px 0px 15px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+.t13 .prof-experience .add-bot-mgn {
+  margin-bottom: 8px;
+}
+.t13 .prof-experience .add-bot-mgn h3 span.job-title {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+.t13 .prof-experience .add-bot-mgn h3 span.company-name {
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  margin-bottom: 6px;
+}
+.t13 .prof-experience .add-bot-mgn h3 span.company-name .company {
+  width: 50%;
+  display: block;
+}
+.t13 .prof-experience .add-bot-mgn h3 span.company-name .year {
+  text-align: right;
+  width: 50%;
+  padding-left: 50px;
+  display: block;
+}
+.t13 .prof-experience .add-bot-mgn h3 i {
+  display: inline;
+  font-size: 12px;
+  line-height: 12px;
+}
+.t13 .prof-experience .add-bot-mgn:last-child {
+  margin-bottom: 0;
+}
+.t13 .prof-experience .add-des-bottom-mgn p {
+  margin-bottom: 6px;
+}
+.t13 .prof-experience .add-des-bottom-mgn p:last-child {
+  margin-bottom: 0;
+}
+.t13 .skills-block {
+  padding: 0 72px 20px 72px;
+}
+.t13 .skills-block h2 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #e9932f;
+  margin-bottom: 12px;
+  position: relative;
+}
+.t13 .skills-block h2 span {
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 25px;
+  position: relative;
+  z-index: 1;
+}
+.t13 .skills-block h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #e9932f;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+.t13 .skills-block .two-col-skills .col-skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.t13 .skills-block .two-col-skills .skill {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 5px;
+  width: calc(50% - 15px);
+  margin-right: 30px;
+}
+.t13 .skills-block .two-col-skills .skill:nth-child(2n + 2) {
+  margin-right: 0;
+}
+.t13 .skills-block .two-col-skills .skill .skill-label {
+  width: 100px;
+  margin-right: 15px;
+}
+.t13 .skills-block .two-col-skills .skill .skill-bar {
+  width: calc(100% - 115px);
+  height: 10px;
+  border: solid 1px #e9932f;
+  border-radius: 4px;
+}
+.t13 .skills-block .two-col-skills .skill .bar {
+  background-color: #e9932f;
+  height: 9px;
+  border-radius: 2px 3px 3px 2px;
+}
+.t13 .other-block {
+  padding: 0 72px 20px 72px;
+}
+.t13 .other-block h2 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #e9932f;
+  margin-bottom: 12px;
+  position: relative;
+}
+.t13 .other-block h2 span {
+  display: inline-block;
+  background-color: #fff;
+  padding-right: 25px;
+  position: relative;
+  z-index: 1;
+}
+.t13 .other-block h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #e9932f;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+.t13 .other-block .add-bot-mgn {
+  margin-bottom: 12px;
+}
+.t13 .other-block .add-bot-mgn h3 span.job-title {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 6px;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+.t13 .other-block .add-bot-mgn h3 span.company-name {
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  margin-bottom: 3px;
+}
+.t13 .other-block .add-bot-mgn h3 span.company-name .company {
+  width: 50%;
+  font-style: normal;
+  display: block;
+}
+.t13 .other-block .add-bot-mgn h3 span.company-name .year {
+  text-align: right;
+  width: 50%;
+  padding-left: 50px;
+  display: block;
+}
+.t13 .other-block .add-bot-mgn h3 i {
+  display: inline;
+  font-size: 12px;
+  line-height: 12px;
+  font-style: normal;
+}
+.t13 .other-block .add-bot-mgn:last-child {
+  margin-bottom: 0;
+}
+.t13 .other-block .add-des-bottom-mgn p {
+  margin-bottom: 6px;
+}
+.t13 .other-block .add-des-bottom-mgn p:last-child {
+  margin-bottom: 0;
+}
+.t13.color-variant-twelve .header-part .header-part-inner {
+  background-color: #e9932f;
+}
+.t13.color-variant-twelve h2 {
+  color: #e9932f;
+}
+.t13.color-variant-twelve h2::after {
+  background-color: #e9932f;
+}
+.t13.color-variant-twelve .skills-block .two-col-skills .skill .skill-bar {
+  border-color: #e9932f;
+}
+.t13.color-variant-twelve .skills-block .two-col-skills .skill .bar {
+  background: #e9932f;
+}
+.t13 a {
+  pointer-events: none;
+  cursor: default;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used from: Embedded */
+.ff-times-regular {
+  font-family: Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-calibri-regular i,
+.ff-calibri-regular em {
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.ff-calibri-bold {
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "Times";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times-Italic.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times-Italic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times-Bold.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times-Bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times-BoldItalic.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/times/Times-BoldItalic.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri-Italic.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri-Italic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri-BoldItalic.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri-BoldItalic.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri-Bold.woff2")
+      format("woff2"),
+    url("https://app.resumebuilder.com/assets/scss/new-templates/fonts/calibri/Calibri-Bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
