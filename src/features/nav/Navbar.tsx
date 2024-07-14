@@ -2,12 +2,10 @@ import React from "react";
 import Dropdown from "./Dropdown";
 import Search from "./Search";
 import Notif from "./Notif";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-type Props = {
-  children: React.ReactNode;
-};
-const Navbar = ({ children }: Props) => {
+type Props = {};
+const Navbar: React.FC<Props> = (props) => {
   return (
     <>
       <div className="navbar bg-base-100">
@@ -36,7 +34,9 @@ const Navbar = ({ children }: Props) => {
           </div>
         </div>
       </div>
-      <div>{children}</div>
+      <div>
+        <Outlet />
+      </div>
     </>
   );
 };
