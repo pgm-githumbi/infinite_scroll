@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 import NavbarSlice from "./redux/ui/NavbarSlice";
+import videosSlice from "./features/youtube/VideosSlice";
 
 const store = configureStore({
-  reducer: { navbar: NavbarSlice },
+  reducer: { navbar: NavbarSlice, videos: videosSlice },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
