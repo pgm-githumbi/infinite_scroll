@@ -1,22 +1,21 @@
 import classNames from "classnames";
-import React from "react";
+import React, { LegacyRef } from "react";
 
 type Props = {
   classes?: classNames.ArgumentArray;
   children?: React.ReactNode;
 };
-const Container: React.FC<Props> = ({
-  classes = undefined,
-  children,
-  ...props
-}) => {
-  console.log("extra container props", props);
+const Container = (
+  { classes = undefined, children, ...props }: Props,
+  ref: LegacyRef<HTMLDivElement> | undefined
+) => {
   return (
     <div
       className={classNames(
-        "grid grid-cols-4 bg-lime-500 min-h-full min-w-full",
-        classes
+        "bg-lime-500 min-h-max min-w-max gap-4 py-4 m-3",
+        classes || ""
       )}
+      ref={ref}
       {...props}
     >
       {children}

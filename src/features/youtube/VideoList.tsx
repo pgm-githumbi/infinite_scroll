@@ -1,30 +1,39 @@
-import React from "react";
+import { forwardRef } from "react";
 import VideoComp from "./VideoComp";
-import { Virtuoso } from "react-virtuoso";
+import { VirtuosoGrid } from "react-virtuoso";
 import Container from "../../components/Container";
 
 type Props = {};
 
+const ListContainer = forwardRef(Container);
 const VideoList = (props: Props) => {
+  // const video = useMemo(
+  //   () => (index: number) => <VideoComp index={index} />,
+  //   []
+  // );
   return (
     <>
-      <div className="min-h-96 min-w-full bg-slate-800">
-        <Virtuoso
-          className={"bg-slate-400 min-h-96 min-w-full gap-2"}
-          // style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}
-          totalCount={50000}
-          overscan={50}
+      <div className="min-h-dvh min-w-full py-4">
+        <VirtuosoGrid
+          className={"bg-slate-400 min-h-dvh min-w-1/2 gap-4"}
+          totalCount={500}
+          overscan={100}
+          // increaseViewportBy={{ bottom: 200, top: 0 }}
+          useWindowScroll={true}
           components={{
-            List: Container,
+            List: ListContainer,
           }}
-          itemContent={(index) => (
-            <div className="">
-              <>
-                <div>Item {index}</div>
-                <VideoComp index={index} />
-              </>
-            </div>
-          )}
+          itemContent={(index) => <VideoComp index={index} />}
+          // itemContent={(index) => (
+          //   <div className="">
+          //     <>
+          //       <div>Item {index}</div>
+          //       {/* <VideoComp index={index} /> */}
+          //     </>
+          //   </div>
+          // )}
+          listClassName="flex flex-row flex-wrap justify-evenly gap-4"
+          itemClassName="md:basis-1/5 basis-1/3 lg:basis-1/6"
         />
       </div>
     </>

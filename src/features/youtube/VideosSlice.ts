@@ -2,8 +2,6 @@ import {
   createAsyncThunk,
   createEntityAdapter,
   createSlice,
-  ThunkDispatch,
-  UnknownAction,
 } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
 
@@ -34,15 +32,18 @@ const initialState = videosAdapter.getInitialState({
   },
 });
 
-const fetchVideos = createAsyncThunk("videos/fetchOne", async (id: number) => {
-  return {
-    id,
-    albumId: 0,
-    url: "",
-    thumbnailUrl: "",
-    title: "",
-  };
-});
+export const fetchVideos = createAsyncThunk(
+  "videos/fetchOne",
+  async (id: number) => {
+    return {
+      id,
+      albumId: 0,
+      url: "",
+      thumbnailUrl: "",
+      title: "",
+    };
+  }
+);
 
 const videosSlice = createSlice({
   name: "videos",
@@ -73,21 +74,10 @@ const videosSlice = createSlice({
 
 export default videosSlice.reducer;
 
-export const selectVideoById =
-  (id: number, dispatch: ThunkDispatch<RootState, number, UnknownAction>) =>
-  (state: RootState) => {
-    const selectors = videosAdapter.getSelectors(
-      (state: RootState) => state.videos
-    );
-    let vid = selectors.selectById(state, id);
-    if (vid) return vid;
-    dispatch(fetchVideos(id));
-    return undefined;
-  };
-
 export const {
   selectAll: selectAllVideos,
   selectTotal: selectTotalVideos,
   selectIds: selectVideoIds,
   selectEntities: selectVideoEntities,
+  selectById: selectVideoById,
 } = videosAdapter.getSelectors((state: RootState) => state.videos);
