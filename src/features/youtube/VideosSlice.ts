@@ -38,8 +38,8 @@ export const fetchVideos = createAsyncThunk(
     return {
       id,
       albumId: 0,
-      url: "",
-      thumbnailUrl: "",
+      url: `https://picsum.photos/id/${id}/200/200`,
+      thumbnailUrl: `https://picsum.photos/id/${id}/300/200`,
       title: "",
     };
   }
