@@ -15,7 +15,7 @@ const VideoList = (props: Props) => {
     <>
       <div className="min-h-dvh min-w-full py-4">
         <VirtuosoGrid
-          className={"bg-slate-400 min-h-dvh min-w-1/2 gap-4"}
+          className={"min-h-dvh min-w-1/2 gap-4"}
           totalCount={500}
           overscan={100}
           // increaseViewportBy={{ bottom: 200, top: 0 }}

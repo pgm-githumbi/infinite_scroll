@@ -10,16 +10,23 @@ const VideoOnHover = ({ videoSrc, children }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoPlayError, setVideoPlayError] = useState<boolean>(false);
+  const [paused, setPaused] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
     videoRef.current
       ?.play()
-      .then((_) => setIsHovered(true))
+      .then((_) => {
+        if (paused) {
+          videoRef.current?.pause();
+          isHovered !== false && setIsHovered(false);
+        } else setIsHovered(true);
+      })
       .catch((_) => setVideoPlayError(true));
   };
 
   const handleMouseLeave = () => {
     if (isHovered) videoRef.current?.pause();
+    else setPaused(true);
     setIsHovered(false);
   };
 

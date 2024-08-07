@@ -23,8 +23,8 @@ const VideoComp = ({ index: id }: Props) => {
             placeholder="Holder"
             src={video.thumbnailUrl}
             // width={"300"}
-            width="450"
-            height="300"
+            width="414"
+            height="276"
             alt=""
           />
         </VideoOnHover>
