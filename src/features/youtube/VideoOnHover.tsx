@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import VideoPlayError from "./VideoPlayError";
+import { useClickToWatch } from "./Watch";
 
 type Props = {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ const VideoOnHover = ({ videoSrc, children }: Props) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoPlayError, setVideoPlayError] = useState<boolean>(false);
   const [paused, setPaused] = useState<boolean>(false);
+  useClickToWatch(3);
 
   const handleMouseEnter = () => {
     videoRef.current
@@ -33,7 +35,11 @@ const VideoOnHover = ({ videoSrc, children }: Props) => {
   const displayChildren = !isHovered ? {} : { display: "none" };
   const displayHoverVid = isHovered ? {} : { display: "none" };
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      //   onClick={onClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div style={displayChildren}>{children}</div>
       <div style={displayHoverVid}>
         <VideoPlayError videoPlayErrorOccurred={videoPlayError}>

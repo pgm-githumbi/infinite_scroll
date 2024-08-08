@@ -3,35 +3,27 @@ import VideoComp from "./VideoComp";
 import { VirtuosoGrid } from "react-virtuoso";
 import Container from "../../components/Container";
 
-type Props = {};
+type Props = {
+  width?: number;
+  height?: number;
+};
 
 const ListContainer = forwardRef(Container);
-const VideoList = (props: Props) => {
-  // const video = useMemo(
-  //   () => (index: number) => <VideoComp index={index} />,
-  //   []
-  // );
+const VideoList = ({ width, height }: Props) => {
   return (
     <>
-      <div className="min-h-dvh min-w-full py-4">
+      <div className="min-h-dvh min-w-full">
         <VirtuosoGrid
           className={"min-h-dvh min-w-1/2 gap-4"}
           totalCount={500}
           overscan={100}
-          // increaseViewportBy={{ bottom: 200, top: 0 }}
           useWindowScroll={true}
           components={{
             List: ListContainer,
           }}
-          itemContent={(index) => <VideoComp index={index} />}
-          // itemContent={(index) => (
-          //   <div className="">
-          //     <>
-          //       <div>Item {index}</div>
-          //       {/* <VideoComp index={index} /> */}
-          //     </>
-          //   </div>
-          // )}
+          itemContent={(index) => (
+            <VideoComp index={index} width={width} height={height} />
+          )}
           listClassName="flex flex-row flex-wrap justify-evenly gap-4"
           itemClassName="md:basis-1/5 basis-1/3 lg:basis-1/6"
         />

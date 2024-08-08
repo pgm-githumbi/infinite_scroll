@@ -32,15 +32,33 @@ const initialState = videosAdapter.getInitialState({
   },
 });
 
+const videoUrls = [
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+];
+
+const words =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque velit possimus quae perferendis placeat nulla, eligendi, illo, laborum impedit asperiores ab! Amet impedit labore quam cum quidem nemo neque! Debitis!";
 export const fetchVideos = createAsyncThunk(
   "videos/fetchOne",
   async (id: number) => {
+    const urlId = id % videoUrls.length;
+    const wordList = words.split(" ");
+    const randomIndex1 = Math.floor(Math.random() * wordList.length);
+    const randomIndex2 = Math.floor(Math.random() * wordList.length);
+
     return {
       id,
       albumId: 0,
-      url: `https://picsum.photos/id/${id}/200/200`,
+      url: videoUrls[urlId],
       thumbnailUrl: `https://picsum.photos/id/${id}/300/200`,
-      title: "",
+      title: [wordList[randomIndex1], wordList[randomIndex2]].join(" "),
     };
   }
 );

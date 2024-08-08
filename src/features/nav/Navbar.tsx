@@ -10,8 +10,8 @@ const Navbar: React.FC<Props> = (props) => {
     <>
       <div
         className="navbar bg-base-100 sticky top-0 z-40 w-full 
-        backdrop-blur flex-none transition-colors duration-500 
-        lg:z-50 lg:border-b lg:border-slate-900/10 
+        backdrop-blur transition-colors duration-500 
+        lg:z-50 border-b border-slate-900/10 
         dark:border-slate-50/[0.06] 
         supports-backdrop-blur:bg-white/95 "
       >
