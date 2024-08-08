@@ -22,7 +22,7 @@ const PlayVideo = (props: Props) => {
   useEffect(() => {
     if (video && videoRef.current) {
       videoRef.current.volume = 0.2;
-      videoRef.current.play();
+      videoRef.current.play().catch((reason) => console.log(reason));
     }
   }, [video, videoRef]);
 
