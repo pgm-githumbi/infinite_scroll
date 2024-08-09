@@ -25,7 +25,7 @@ const VideoComp = ({ index: id, width, height }: Props) => {
         className="w-max h-max shadow-2xl outline outline-0 hover:outline-2"
         onClick={onClick}
       >
-        <VideoOnHover videoSrc={video.url}>
+        <VideoOnHover videoSrc={video.url} width={width} height={height}>
           <ImgLoad
             className="rounded-md"
             placeholder="Holder"

@@ -18,7 +18,7 @@ const Navbar: React.FC<Props> = (props) => {
         <div className="navbar-start">
           <Dropdown>
             <li>
-              <Link to="/homepage">homepage</Link>
+              <Link to="/youtube">home</Link>
             </li>
             {/* <li>
               <Link to="/portfolio">portfolio</Link>
@@ -29,7 +29,7 @@ const Navbar: React.FC<Props> = (props) => {
           </Dropdown>
         </div>
         <div className="navbar-center">
-          <Link to="/homepage" className="btn btn-ghost text-xl text-zinc-700">
+          <Link to="/youtube" className="btn btn-ghost text-xl text-zinc-700">
             <svg
               enableBackground="new 0 0 32 32"
               height="32px"

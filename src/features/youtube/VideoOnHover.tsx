@@ -5,9 +5,11 @@ import { useClickToWatch } from "./Watch";
 type Props = {
   children: React.ReactNode;
   videoSrc: string;
+  width?: number;
+  height?: number;
 };
 
-const VideoOnHover = ({ videoSrc, children }: Props) => {
+const VideoOnHover = ({ videoSrc, children, width, height }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoPlayError, setVideoPlayError] = useState<boolean>(false);
@@ -43,7 +45,13 @@ const VideoOnHover = ({ videoSrc, children }: Props) => {
       <div style={displayChildren}>{children}</div>
       <div style={displayHoverVid}>
         <VideoPlayError videoPlayErrorOccurred={videoPlayError}>
-          <video ref={videoRef} width="450" muted={true} height="300" controls>
+          <video
+            ref={videoRef}
+            width={(width && width.toString()) || "414"}
+            muted={true}
+            height={(height && height.toString()) || "276"}
+            controls
+          >
             <source src={videoSrc} type="video/mp4" />
             <source src="movie.ogg" type="video/ogg" />
             Your browser does not support the video tag.
